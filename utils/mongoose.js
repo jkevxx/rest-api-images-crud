@@ -1,9 +1,6 @@
 import mongoose from "mongoose";
-import "dotenv/config";
-
-// console.log(process.env.MONGO_URL)
-
-const MONGODB_URI = process.env.MONGODB_URI;
+// import "dotenv/config";
+import { MONGODB_URI } from "../config.js";
 
 export async function connectToDB() {
   try {

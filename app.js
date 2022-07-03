@@ -3,7 +3,6 @@
 //const express = require('express');
 import express from "express";
 import cors from "cors";
-
 // FILE ROUTES
 import indexRoutes from "./routes/index.routes.js";
 import productsRoutes from "./routes/product.routes.js";
