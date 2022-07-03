@@ -1,5 +1,5 @@
 {
-  "name": "reat-api-images-crud",
+  "name": "rest-api-images-crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/kevinpaezg/reat-api-images-crud#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.18"

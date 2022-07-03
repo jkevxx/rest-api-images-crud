@@ -1,15 +1,14 @@
-//const express = require('express');
+import app from "./app.js";
+const PORT = 4000;
 
-import express from 'express'
-const app = express();
+import { connectToDB } from "./utils/mongoose.js";
 
+async function main() {
+  await connectToDB();
 
-const PORT = 3000;
+  app.listen(PORT, () => {
+    console.log("I'm listening in port", PORT);
+  });
+}
 
-app.get('/', (req, res)=>{
-  res.send('Hellow World')
-})
-
-app.listen(PORT, ()=>{
-  console.log("I'm listening in port", PORT);
-})
+main();
